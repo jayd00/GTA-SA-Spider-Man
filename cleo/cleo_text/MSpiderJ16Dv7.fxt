@@ -1,0 +1,391 @@
+J16D0 EMPTY
+J16D1 SETTINGS
+J16D2 MAP
+J16D3 SUITS
+J16D4 SKILLS
+J16D5 CHARACTERS
+J16D6 MOVES
+J16D7 STATISTICS
+
+J16D8 ~K~ ~j~ ROTATE
+J16D9 ~x~ EQUIP
+J16D10 ~o~ CLOSE
+J16D11 OWNED
+J16D12 ~o~ BACK
+J16D13 LOCKED
+J16D14 EQUIPPED
+J16D15 LEVEL
+
+J16D16 (~h~TAB) ~s~ROTATE
+J16D17 (~h~SPACE) ~s~EQUIP
+J16D18 (~h~LMB) ~s~CLOSE
+J16D19 (~h~LMB) ~s~BACK
+
+J16D20 NO ASSOCIATED SUIT POWER
+J16D21 Combined with the following suit:
+J16D22 SUIT
+J16D23 SUIT POWER
+J16D24 SUIT MODS
+
+J16D25 Advanced Suit
+J16D26 Classic Suit (Damaged)
+J16D27 Classic Suit (Repaired)
+J16D28 Noir Suit
+J16D29 Scarlet Spider Suit
+J16D30 Spider Armour - MK II Suit
+J16D31 Secret War Suit
+J16D32 Stark Suit
+J16D33 Negative Suit
+J16D34 Electrically Insulated Suit
+J16D35 Spider-Punk
+J16D36 Wrestler Suit
+J16D37 Fear Itself
+J16D38 Stealth "Big Time" Suit
+J16D39 Spider Armor - MK III Suit
+J16D40 Spider-Man 2099 Black Suit
+J16D41 Cyborg Spider-Man Suit
+J16D42 Bombastic Bag-Man Suit
+J16D43 Spider Armour - MK IV Suit
+J16D44 Spirit Spider
+J16D45 Spider-Man 2099 White Suit
+J16D46 Vintage Comic Book Suit
+J16D47 Last Stand Suit
+J16D48 Undies
+J16D49 Aaron Aikman Armor Suit
+J16D50 Anti-Ock Suit
+J16D51 Dark Suit
+J16D52 Spider-UK
+J16D53 Iron Spider Armor
+J16D54 Webbed Suit
+
+J16D59 ???????
+J16D60 ~r~WARNING!
+J16D61 You need to turn on this mod before change character!
+
+J16D62 ~r~VERSION 1.9 BETA
+J16D63 This mod was made for fun and totally free... ~n~if you want to support me share my video and my links! (youtube.com/J16D)
+J16D64 by J16D c. 2018-2021
+
+J16D65 ~k~~PED_CYCLE_WEAPON_LEFT~
+J16D66 ~k~~PED_CYCLE_WEAPON_RIGHT~
+J16D67 ~x~ SELECT
+J16D68 EMPTY
+J16D69 ~<~ ~h~Q
+J16D70 ~h~E ~>~
+J16D71 (~h~SPACE) ~s~SELECT
+
+J16D80 OMGs
+J16D81 TIME REMAINING
+J16D82 TOTAL SCORE
+J16D83 EMP Challenge
+J16D84 SCORE
+J16D85 SCORE SUMMARY
+J16D86 ~1~:0~1~
+J16D87 ~1~:~1~
+J16D88 Time Bonus
+J16D89 Photobomb Bonus
+J16D90 REWARDS
+J16D91 GET READY
+J16D92 AMAZING~n~LEVEL
+J16D93 SPECTACULAR~n~LEVEL
+J16D94 ULTIMATE~n~LEVEL
+J16D95 BEST SCORE
+
+J16D100 Force Alternative Swing
+J16D101 Force Swing without buildings
+J16D102 Fix Stuck in ground
+J16D103 Control Swing with Mouse
+J16D104 Auto Aim
+J16D105 Drive Vehicles
+J16D106 Friendly Neighborhood
+J16D107 Throw Vehicle Doors ~r~BETA
+
+J16D109 HUD ELEMENTS
+J16D110 SPIDERMAN MOD
+J16D111 HUD
+J16D112 BACKGROUND MUSIC
+J16D113 CONFIGURATION
+J16D114 HUD ELEMENTS
+
+J16D118 PRIMARY CONTROLS
+J16D119 Press ~r~~k~~CONVERSATION_YES~ ~s~to show Primary Controls
+J16D120 LEVEL
+J16D121 ~1~
+J16D122 +~1~
+J16D123 XP
+J16D124 LEVEL ~1~
+J16D125 / ~1~ XP
+J16D126 ~1~ / 10
+J16D127 ~1~ XP
+J16D128 ~1~ / 50
+J16D129 ~1~ / ~1~
+J16D130 ~1~/~1~
+
+J16D131 RADAR
+J16D132 HEALTH BAR
+J16D133 GADGET AMMUNITION
+J16D134 MONEY
+J16D135 CLOCK
+J16D136 BREATH BAR
+J16D137 ARMOUR BAR
+J16D138 WANTED STARS
+
+J16D150 ~k~~PED_JUMPING~
+J16D151 ~k~~VEHICLE_ENTER_EXIT~
+J16D152 ~k~~PED_SPRINT~
+J16D153 ~k~~PED_FIREWEAPON~ 
+J16D154 ~k~~PED_JUMPING~ CONTINUE
+J16D155 ~k~~VEHICLE_ENTER_EXIT~ RETRY
+J16D156 ~k~~PED_CYCLE_WEAPON_RIGHT~
+
+J16D160 ~q~
+J16D161 ~t~
+J16D162 ~x~
+J16D163 ~o~
+J16D164 ~q~ CONTINUE
+J16D165 ~t~ RETRY
+J16D166 ~v~
+J16D167 San Fierro
+J16D168 Los Santos
+J16D169 Las Venturas
+
+J16D170 Side Missions
+J16D171 Landmarks
+J16D172 Backpacks
+J16D173 Crimes
+J16D174 Black Cat Stakeouts
+J16D177 MAP LEGEND
+J16D178 Press ~r~~k~~CONVERSATION_YES~ ~s~to show Legend.
+J16D179 No info
+
+J16D180 INFO
+J16D181 Peter Parker / Spider-Man
+J16D182 Height: 5'10" ~n~Weight: 167 lbs ~n~Age: 23 ~n~Place of Birth: Forest Hills, New York ~n~Occupation: Research Assistant ~n~Aliases: Friendly Neighborhood Spider-Man, ~n~Webhead, Webslinger, "Tiger"
+J16D183 Mary Jane Watson
+J16D184 Height: 5'8" ~n~Weight: 120 lbs ~n~Age: 23 ~n~Place of Birth: Montoursville, PA ~n~Occupation: Reporter ~n~Aliases: MJ
+J16D185 Wilson Fisk / Kingpin
+J16D186 Height: 6'7" ~n~Weight: 450 lbs ~n~Age: 48 ~n~Place of Birth: Unknown ~n~Occupation: CEO, Fisk Industires, Criminal Mastermind ~n~Aliases: Kingpin of crime
+J16D187 Herman Schultz / Shocker
+J16D188 Height: 5'9" ~n~Weight: 175 lbs ~n~Age: 42 ~n~Place of Birth: New York City, New York ~n~Occupation: "Professional" Thief ~n~Aliases: n/a
+J16D189 Miles Morales
+J16D190 Height: 5'8" ~n~Weight: 130 lbs ~n~Age: 15 ~n~Place of Birth: Brookly, New York ~n~Occupation: Student ~n~Aliases: n/a
+J16D191 Silver Sablinova / Silver Sable
+J16D192 Height: 5'5" ~n~Weight: 125 lbs ~n~Age: 36 ~n~Place of Birth: Symkaria ~n~Occupation: CEO, Sable International ~n~Aliases: n/a
+J16D193 Mac Gargan / Scorpion
+J16D194 Height: 6'3" ~n~Weight: 220 lbs ~n~Age: 35 ~n~Place of Birth: Yonkers, New York ~n~Occupation: Gun for Hire ~n~Aliases: n/a
+J16D195 Aleksi Sytsevich / Rhino
+J16D196 Height: 7'5" ~n~Weight: 710 lbs ~n~Age: 41 ~n~Place of Birth: Irkutsk, Russia ~n~Occupation: Ex-Mob Enforcer ~n~Aliases: Santa Claus
+J16D197 Adrian Toomes / Vulture
+J16D198 Height: 5'11" ~n~Weight: 175 lbs ~n~Age: 76 ~n~Place of Birth: Staten Island, New York City ~n~Occupation: Former Electronics Engineer ~n~Aliases: n/a
+J16D199 Mister Negative
+J16D200 Height: 5'11" ~n~Weight: 180 lbs ~n~Age: 40 ~n~Place of Birth: Dali, China ~n~Occupation: Terrorist ~n~Aliases: Martin Li
+
+J16D208 ON AIR
+J16D209 ON FOOT
+
+J16D210 BASIC ATTACK
+J16D211 BASIC COMBO
+J16D212 JUMP
+J16D213 CHARGE JUMP
+J16D214 WEB ATTACK
+J16D215 AIR COMBO
+J16D216 PERFECT DODGE
+J16D217 DODGE UNDER
+J16D218 SWING
+J16D219 WEB ZIP
+J16D220 WALL RUN
+J16D221 WALL JUMP
+J16D222 WALL TOP JUMP
+J16D223 ZIP TO POINT
+J16D224 POINT LAUNCH
+J16D225 AIR TRICKS
+
+J16D230 ~h~LMB
+J16D231 ~h~LMB, LMB, LMB, LMB
+J16D232 ~h~SPACE
+J16D233 Hold ~h~SPACE ~s~+ ~h~LSHIFT, ~s~release ~h~SPACE
+J16D234 Press ~h~F
+J16D235 Hold ~h~LMB
+J16D236 Hold ~h~RMB + press ~h~LSHIFT
+J16D237 Press ~h~LMB + ~h~LSHIFT
+J16D238 Hold ~h~SPACE
+J16D239 ~h~LSHIFT
+J16D240 Hold ~h~SPACE
+J16D241 ~h~LSHIFT
+J16D242 ~h~SPACE ~s~+ Hold ~h~LSHIFT
+J16D243 ~h~Q ~s~+ ~h~E
+J16D244 ~h~Q ~s~+ ~h~E, LSHIFT
+J16D245 ~h~F ~s~+ ~h~LS(W-A-S-D)
+
+J16D250 ~k~~PED_FIREWEAPON~
+J16D251 ~k~~PED_FIREWEAPON~, ~k~~PED_FIREWEAPON~, ~k~~PED_FIREWEAPON~
+J16D252 ~k~~PED_JUMPING~
+J16D253 Hold ~k~~PED_SPRINT~ + ~k~~PED_JUMPING~, release ~k~~PED_SPRINT~
+J16D254 Press ~k~~VEHICLE_ENTER_EXIT~
+J16D255 Hold ~k~~PED_FIREWEAPON~
+J16D256 Hold ~k~~PED_LOCK_TARGET~ + press ~k~~PED_JUMPING~
+J16D257 Press ~k~~PED_FIREWEAPON~ + ~k~~PED_JUMPING~
+J16D258 Hold ~k~~PED_SPRINT~
+J16D259 ~k~~PED_JUMPING~
+J16D260 Hold ~k~~PED_SPRINT~
+J16D261 ~k~~PED_JUMPING~
+J16D262 ~k~~PED_SPRINT~ + Hold ~k~~PED_JUMPING~
+J16D263 ~k~~PED_CYCLE_WEAPON_LEFT~ + ~k~~PED_CYCLE_WEAPON_RIGHT~
+J16D264 ~k~~PED_CYCLE_WEAPON_LEFT~ + ~k~~PED_CYCLE_WEAPON_RIGHT~, ~k~~PED_JUMPING~
+J16D265 ~k~~VEHICLE_ENTER_EXIT~ + ~A~
+
+J16D300 This is a basic attack.
+J16D301 A basic series of three attacks on ~n~the ground.
+J16D302 Basic jump.
+J16D303 When you are running, ~n~Hold ~k~~PED_SPRINT~ + ~k~~PED_JUMPING~ to ~n~gather energy and then release ~k~~PED_SPRINT~ ~n~to make a long jump.
+J16D304 Pull youself towards the enemy and hit him.
+J16D305 Hold ~k~~PED_FIREWEAPON~ for at least 3 sec to start the basic ~n~series of four attacks in the air.
+J16D306 Hold ~k~~PED_LOCK_TARGET~ + press ~k~~PED_JUMPING~ to make a ~n~last-minute dodge to get the perfect dodge.
+J16D307 Press ~k~~PED_FIREWEAPON~ + ~k~~PED_JUMPING~  OR~n~Press ~k~~VEHICLE_ENTER_EXIT~ + ~k~~PED_JUMPING~ ~n~To hit enemy and then perform a dodge in his ~n~direction to dodge under.
+J16D308 To gain speed while swinging keep ~n~pressing the key, when reach the ~n~highest point release the key.
+J16D309 Press ~k~~PED_JUMPING~ when you ~n~are in the air to perform a Web Zip. ~n~It is a great way to maintain height ~n~and change direction.
+J16D310 When you are standing near a wall, ~n~Hold ~k~~PED_SPRINT~ to run on it.
+J16D311 On the wall, press ~k~~PED_JUMPING~ ~n~to jump off.
+J16D312 Hold ~k~~PED_JUMPING~ near the top of ~n~the building to keep momentum.
+J16D313 Look at the highlighted spot and go to it.
+J16D314 On a flight to the desired ~n~location, use the Point Launch just ~n~before the landing in order to ~n~launch forward and gain speed.
+J16D315 Tricks in the air will gain ~n~experience points.
+
+J16D331 When turned ON, this will enable ~n~a variation of the swinging. ~n~Default: Off
+J16D332 When turned ON, you'll be able ~n~to swing without buildings. ~n~Default: On
+J16D333 Fixes Spider gets stuck on ground. ~n~Default: On
+J16D334 Recommended for users that use ~n~Keyboard + Mouse, for Gamepad by default ~n~is turned off.
+J16D335 When turned ON, press Aim Button ~n~to auto-aim peds. ~n~Default: Off
+J16D336 When turned ON, Spider-Man will ~n~be able to drive vehicles. ~n~~r~Warning! ~s~This may cause bugs because ~n~incompatibility with Web-Strike. ~n~Default: Off
+J16D337 When turned ON, Spider-Man will ~n~be ignored by police.
+J16D338 Hold ~k~~PED_CYCLE_WEAPON_LEFT~ + ~k~~PED_CYCLE_WEAPON_RIGHT~ besides a ~n~vehicle to catch and throw Door. ~n~~r~Warning! ~s~This is a ~r~BETA ~s~feature ~n~and may not work correctly, ~n~use it by your own risk.
+J16D339 Hold ~h~Q ~s~+ ~h~E besides a vehicle ~n~to catch and throw Door. ~n~~r~Warning! ~s~This is a ~r~BETA ~s~feature ~n~and may not work correctly, ~n~use it by your own risk.
+
+J16D400 No Power Selected
+J16D401 Web Blossom
+J16D402 Holo Decoy
+J16D403 Bullet Proof
+J16D404 Spider Bro
+J16D405 Negative Shockwave
+J16D406 Electric Punch
+J16D407 Rock Out
+J16D408 Blur Projector
+J16D409 Low Gravity
+J16D410 Iron Arms
+J16D411 Defence Shield
+J16D412 Spirit Fire
+
+J16D420 -
+J16D421 Leap into the air and web everythin ~n~in sight.
+J16D422 Experimental AR tech spawns multiple ~n~holo decoys that stun attacking enemies ~n~before decaying.
+J16D423 Magnetically polarised armour plating ~n~makes suit temporarily bullet-proof against ~n~all enemies.
+J16D424 Calls in a Spider-Bro to temporarily ~n~aid in combat.
+J16D425 Synchronises nano-mesh particles to ~n~unleash a devastating wave of negative energy
+J16D426 Kit bashed high-discharge capacitors ~n~temporarily electrify gauntlets, electrifying ~n~enemies.
+J16D427 Blasts enemies with waves of ~n~righteous sound.
+J16D428 Create a distortion field that can ~n~obscure you from non-alerted enemies vision.
+J16D429 Decrease gravity while in the air.
+J16D430 Wreak havoc with four articulated ~n~arms made from rapidly grown mono-atomic ~n~iron alloy crystal.
+J16D431 Experimental magnetic weave generates ~n~an energy shiled that temprarily ~n~absorbs all damage.
+J16D432 Channels unstable waves of damaging ~n~ethereal energy from ... somewhere ...
+
+J16D440 ~1~ m
+
+J16D450 Press ~r~~k~~PED_DUCK~ ~s~+ ~r~~k~~PED_LOOKBEHIND~ ~s~to activate
+J16D451 Press ~r~C ~s~+ ~r~1 ~s~to activate
+
+J16D470 Stolen Vehicle
+J16D471 Combat
+J16D472 TOTAL XP EARNED
+J16D473 XP SUMMARY
+J16D474 STOPPED
+J16D475 ~h~LSHIFT ~s~CONTINUE
+J16D476 BACKPACK DISCOVERED
+J16D477 First Date Menu
+J16D478 Classic Web Shooter
+J16D479 Locket
+J16D480 Old Camera
+J16D481 Magnet
+J16D482 Oscorp Visitor Pass
+J16D483 Pizza Delivery Hat
+J16D484 Selfie
+J16D485 Spider Logo Sketches
+J16D486 Plushie
+J16D487 COMPLETED!
+
+J16D490 WAVE
+J16D491 KILLS
+
+J16D501 MISSIONS
+J16D502 TOTAL PASSED
+J16D503 Crimes
+J16D504 Thug Hideouts
+J16D505 Car Chase
+J16D506 Screwball Challenges
+J16D507 Backpacks
+J16D508 Landmarks
+
+J16D521 ~k~~PED_CYCLE_WEAPON_LEFT~
+J16D522 ~h~Q
+
+J16D600 EMPTY
+J16D601 EMPTY
+J16D602 EMPTY
+J16D603 EMPTY
+J16D604 ON
+J16D605 OFF
+J16D606 When turned ON, you'll become Spider-Man.
+J16D607 When turned ON, HUD elements will ~n~show on-screen.
+J16D608 When turned ON, background music will ~n~be played depending on each situation.
+
+J16D611 ~r~Warning! ~s~this feature needs the ~n~plugin ~r~radarrect.asi~s~, If you don't have it, ~n~turn it OFF
+J16D612 When turned ON, health bar will be ~n~visible.
+J16D613 When turned ON, gadget ammunition ~n~and Suit-Power will be visible.
+J16D614 Turn it ON to show money.
+J16D615 Turn it on to show time.
+J16D616 When turned ON, breath bar will be ~n~visible (only if swimming).
+J16D617 When turned ON, armour bar will be ~n~visible (only when available).
+J16D618 When turned ON, wanted stars will ~n~be visible.
+
+J16D627 Webslinger
+J16D628 Defender
+J16D629 Innovator
+J16D630 Surprise Attack
+J16D631 While in air press ~k~~VEHICLE_ENTER_EXIT~ to ~n~shoot down pay attention on ~n~the indicator.
+J16D632 Perfect Dodge
+J16D633 Press ~k~~PED_LOCK_TARGET~ + ~k~~PED_JUMPING~ just ~n~as your Spider Sense turns blue ~n~to evade enemies.
+J16D634 Dodge Window
+J16D635 Increases timing window for ~n~Perfect Dodge making it easier to ~n~accomplish.
+J16D636 Swing Kick
+J16D637 Hold ~k~~PED_FIREWEAPON~ while in the air ~n~to Swing Kick enemies and send ~n~them flying.
+J16D638 Point Launch Boost
+J16D639 Press ~k~~PED_JUMPING~ on contact with ~n~point to massively boost Point ~n~Launch distance.
+J16D640 Bunker Buster
+J16D641 Swing Kick will now knock over ~n~heavy enemies.
+J16D642 Air Tricks
+J16D643 Hold ~k~~VEHICLE_ENTER_EXIT~ and Press ~h~LS(W-A-S-D) ~n~~s~to perform aerial tricks to earn XP.
+J16D644 Quick Recovery
+J16D645 Press ~k~~PED_JUMPING~ during a roll ~n~after landing to launch back ~n~into the air.
+J16D646 Charge Jump
+J16D647 Hold ~k~~PED_SPRINT~ to build up ~n~charge then press ~k~~PED_JUMPING~ for a ~n~huge leap.
+
+SP650 ~k~~VEHICLE_ENTER_EXIT~ ~s~Web Backpack
+SP651 ~h~F ~s~Web Backpack
+SP652 ~k~~VEHICLE_ENTER_EXIT~
+SP653 ~h~F
+
+SP701 ~k~~PED_CYCLE_WEAPON_LEFT~ + ~k~~PED_CYCLE_WEAPON_RIGHT~
+SP702 ~h~Q ~s~+ ~h~E
+SP703 ~k~~PED_CYCLE_WEAPON_LEFT~
+SP704 ~k~~PED_CYCLE_WEAPON_RIGHT~
+SP705 ~h~Q
+SP706 ~h~E
+
+SP711 ~k~~VEHICLE_ENTER_EXIT~ ~s~Web Strike
+SP712 ~h~F ~s~Web Strike
+SP713 ~k~~VEHICLE_ENTER_EXIT~ ~s~Web Strike Takedown
+SP714 ~h~F ~s~Web Strike Takedown
+
+SP_A01 These thugs weren't here a few days ago
+SP_A02 It seems they are up to something
+SP_A03 Find out what's going on, defeat the thugs
