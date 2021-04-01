@@ -2,3 +2,7 @@
 https://sites.google.com/view/j16d
 
 https://www.moddb.com/mods/spider-man-mod-gta-sa
+
+
+You probably need:
+https://gtaforums.com/topic/876530-gta3script-toolchain/
