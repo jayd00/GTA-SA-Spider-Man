@@ -91,7 +91,9 @@ main_loop:
                                 CLEO_CALL setRadarPostion 0 525.0 85.0 125.0 70.0   //Left|Top|Width|Height
                                 BREAK
                             DEFAULT
-                                CLEO_CALL setRadarPostion 0 575.0 85.0 125.0 70.0   //Left|Top|Width|Height
+                                //This new line will make screens 1366x768 (16:8.9956076) compatible
+                                CLEO_CALL setRadarPostion 0 800.0 85.0 125.0 70.0   //Left|Top|Width|Height
+                                ///CLEO_CALL setRadarPostion 0 575.0 85.0 125.0 70.0   //Left|Top|Width|Height
                                 BREAK
                         ENDSWITCH
                     ENDIF
