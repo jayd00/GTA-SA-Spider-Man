@@ -204,20 +204,22 @@ start:
     IF IS_PLAYER_PLAYING player
         IF NOT IS_CHAR_IN_ANY_CAR player_actor
 
-            IF IS_PC_USING_JOYPAD 
-                IF IS_BUTTON_PRESSED PAD1 LEFTSHOCK   // ~k~~PED_DUCK~
-                AND IS_BUTTON_PRESSED PAD1 RIGHTSHOCK  // ~k~~PED_LOOKBEHIND~
-                    WHILE IS_BUTTON_PRESSED PAD1 LEFTSHOCK   // ~k~~PED_DUCK~
+            //GAMEPAD - disabled command for now. Use keyboard.
+            /*IF IS_PC_USING_JOYPAD 
+                IF IS_BUTTON_PRESSED PAD1 DPADLEFT      //~k~~CONVERSATION_NO~
+                AND IS_BUTTON_PRESSED PAD1 DPADRIGHT    //~k~~CONVERSATION_YES~
+                    WHILE IS_BUTTON_PRESSED PAD1 DPADLEFT      //~k~~CONVERSATION_NO~
                         WAIT 0
                     ENDWHILE
-                    WHILE IS_BUTTON_PRESSED PAD1 RIGHTSHOCK  // ~k~~PED_LOOKBEHIND~
+                    WHILE IS_BUTTON_PRESSED PAD1 DPADRIGHT    //~k~~CONVERSATION_YES~
                         WAIT 0
                     ENDWHILE
-                    iTempVar = 1     // 1:is key combination pressed 
+                    //FIX  disabled menu for specific situations
+                    GOSUB fix_menu
                 ELSE
                     iTempVar = 0     // 1:is key combination pressed 
                 ENDIF
-            ELSE
+            ELSE*/
                 IF IS_KEY_PRESSED 17   //Ctrl (both) 17 
                 AND IS_KEY_PRESSED VK_KEY_O
                     WHILE IS_KEY_PRESSED 17   //Ctrl (both) 17 
@@ -227,37 +229,11 @@ start:
                         WAIT 0
                     ENDWHILE
                     //FIX  disabled menu for specific situations
-                    GET_CLEO_SHARED_VAR varOnmission (counter) // flag_player_on_mission ||0:Off ||1:on mission || 2:car chase || 3:criminal || 4:boss1 || 5:boss2
-                    SWITCH counter
-                        CASE 2   //car chase
-                            IF GOSUB is_not_char_playing_car_missions_anims
-                                IF  GOSUB is_not_char_playing_wall_anims
-                                    iTempVar = 1     // 1:is key combination pressed
-                                ELSE
-                                    iTempVar = 0     // 1:is key combination pressed 
-                                    PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
-                                    WAIT 1500
-                                ENDIF
-                            ELSE 
-                                iTempVar = 0     // 1:is key combination pressed 
-                                PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
-                                WAIT 1500
-                            ENDIF
-                            BREAK
-                        DEFAULT  //all others
-                            IF GOSUB is_not_char_playing_wall_anims
-                                iTempVar = 1     // 1:is key combination pressed 
-                            ELSE
-                                iTempVar = 0     // 1:is key combination pressed 
-                                PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
-                                WAIT 1500
-                            ENDIF
-                            BREAK
-                    ENDSWITCH
+                    GOSUB fix_menu
                 ELSE
                     iTempVar = 0     // 1:is key combination pressed 
                 ENDIF
-            ENDIF
+            //ENDIF
 
             GET_CLEO_SHARED_VAR varOnmission (counter)  //0:Off ||1:on mission || 2:car chase || 3:criminal || 4:boss1 || 5:boss2
             IF iTempVar = 1     // 1:is key combination pressed
@@ -347,6 +323,36 @@ start:
     ENDIF
     WAIT 0
 GOTO start
+
+fix_menu:
+    GET_CLEO_SHARED_VAR varOnmission (counter) // flag_player_on_mission ||0:Off ||1:on mission || 2:car chase || 3:criminal || 4:boss1 || 5:boss2
+    SWITCH counter
+        CASE 2   //car chase
+            IF GOSUB is_not_char_playing_car_missions_anims
+                IF  GOSUB is_not_char_playing_wall_anims
+                    iTempVar = 1     // 1:is key combination pressed
+                ELSE
+                    iTempVar = 0     // 1:is key combination pressed 
+                    PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
+                    WAIT 1500
+                ENDIF
+            ELSE 
+                iTempVar = 0     // 1:is key combination pressed 
+                PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
+                WAIT 1500
+            ENDIF
+            BREAK
+        DEFAULT  //all others
+            IF GOSUB is_not_char_playing_wall_anims
+                iTempVar = 1     // 1:is key combination pressed 
+            ELSE
+                iTempVar = 0     // 1:is key combination pressed 
+                PRINT_FORMATTED_NOW "~r~Can't open menu at this moment." 1500
+                WAIT 1500
+            ENDIF
+            BREAK
+    ENDSWITCH
+RETURN
 
 is_not_char_playing_car_missions_anims:
     IF NOT IS_CHAR_PLAYING_ANIM player_actor ("c_idle_Z")
