@@ -17,13 +17,15 @@ CONST_INT idMapIcon5 19     //RADAR_SPRITE_ENEMYATTACK
 CONST_INT idMapIcon7 58     //RADAR_SPRITE_GANG_B
 CONST_INT idMapIcon8 26     //RADAR_SPRITE_MCSTRAP
 CONST_INT idMapIcon9 61     //RADAR_SPRITE_GANG_N
+CONST_INT idMapIcon10 55    //RADAR_SPRITE_IMPOUND
 
 LOAD_TEXTURE_DICTIONARY spaim
 LOAD_SPRITE idMapIcon0b "mk0_b"     //Way Point
 LOAD_SPRITE idMapIcon5 "mk5"        //Car Chase / Crimes
 LOAD_SPRITE idMapIcon7 "mk7"        //Thug Hideouts
-LOAD_SPRITE idMapIcon8 "mk8"        //Screwball
+LOAD_SPRITE idMapIcon8 "mk0"        //Main Mission WayPoint
 LOAD_SPRITE idMapIcon9 "mk9"        //Street Crimes
+LOAD_SPRITE idMapIcon10 "mk10"      //Surveillance Towers
 
 //ADD_SPRITE_BLIP_FOR_COORD -1691.91 1104.3081 94.0312 RADAR_SPRITE_GANG_N (iEventBlip) //RADAR_SPRITE_WAYPOINT
 WHILE TRUE
@@ -104,6 +106,7 @@ draw_3d_blip:
         OR iBlipIcon = RADAR_SPRITE_ENEMYATTACK
         OR iBlipIcon = RADAR_SPRITE_MCSTRAP
         OR iBlipIcon = RADAR_SPRITE_GANG_N
+        OR iBlipIcon = RADAR_SPRITE_IMPOUND
             iTempVar = iPoolStart + 8      //float fPosX; // 8
             READ_MEMORY iTempVar 4 FALSE (x)
             iTempVar = iPoolStart + 12      //float fPosY; // 12
@@ -112,8 +115,8 @@ draw_3d_blip:
             READ_MEMORY iTempVar 4 FALSE (z)
             //z = 1000.0
             //GET_GROUND_Z_FOR_3D_COORD (x y z) (z)
-            //z += 1.0
-            z += 0.5
+            //z += 0.6
+            z += 0.6
             GET_OFFSET_FROM_CAMERA_IN_WORLD_COORDS 0.0 0.0 0.0 (x1 y1 z1)
             GET_DISTANCE_BETWEEN_COORDS_3D (x y z) (x1 y1 z1) (fDistance)
             IF fDistance > 10.0
@@ -215,6 +218,8 @@ CONST_INT varSkill3b            55    //sp_me    ||1= Activated     || 0= Deacti
 CONST_INT varSkill3c            56    //sp_main  ||1= Activated     || 0= Deactivated
 CONST_INT varSkill3c1           57    //sp_mb    ||1= Activated     || 0= Deactivated
 CONST_INT varSkill3c2           58    //sp_mb    ||1= Activated     || 0= Deactivated
+
+CONST_INT varAudioActive     	45    // 0:OFF || 1:ON  ||global var to check -spech- audio playing
 
 /*
 //For test

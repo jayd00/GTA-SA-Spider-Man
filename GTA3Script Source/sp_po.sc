@@ -358,7 +358,9 @@ play_sfx_web_blossom:
     IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_wb1.mp3"
         LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_wb1.mp3" (sfx)
         SET_AUDIO_STREAM_STATE sfx 1    //play
-        SET_AUDIO_STREAM_VOLUME sfx 0.9
+        GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+        fRandomVal[1] *= 0.8
+        SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
     ENDIF
     WAIT 0
 RETURN
@@ -633,14 +635,20 @@ play_sfx_holo_decoy:
             IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_hd1.mp3"
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_hd1.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
-                SET_AUDIO_STREAM_VOLUME sfx 0.8
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.8
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
+                //SET_AUDIO_STREAM_VOLUME sfx 0.8
             ENDIF
             BREAK
         CASE 1  //out
             IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_hd2.mp3"
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_hd2.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
-                SET_AUDIO_STREAM_VOLUME sfx 0.8
+                //SET_AUDIO_STREAM_VOLUME sfx 0.8
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.8
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
         CASE 2  //speak
@@ -648,6 +656,9 @@ play_sfx_holo_decoy:
                 SET_PLAY_3D_AUDIO_STREAM_AT_CHAR sfx player_actor
                 //SET_PLAY_3D_AUDIO_STREAM_AT_COORDS sfx x[0] y[0] z[0]
                 SET_AUDIO_STREAM_STATE sfx 1    //play
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.8
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
         CASE 3  //speak
@@ -655,6 +666,9 @@ play_sfx_holo_decoy:
                 SET_PLAY_3D_AUDIO_STREAM_AT_CHAR sfx player_actor
                 //SET_PLAY_3D_AUDIO_STREAM_AT_COORDS sfx x[1] y[1] z[1]
                 SET_AUDIO_STREAM_STATE sfx 1    //play
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.8
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
     ENDSWITCH
@@ -1039,14 +1053,20 @@ play_shockwave_Sfx:
             IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_hd1.mp3"
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_hd1.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
-                SET_AUDIO_STREAM_VOLUME sfx 0.8
+                //SET_AUDIO_STREAM_VOLUME sfx 0.8
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.7
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
         CASE 1
             IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\wshot6a.mp3"
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\wshot6a.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
-                SET_AUDIO_STREAM_VOLUME sfx 0.65
+                //SET_AUDIO_STREAM_VOLUME sfx 0.65
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.65
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
     ENDSWITCH
@@ -1317,7 +1337,10 @@ play_rock_out_sfx_a:
     IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_ro1.mp3"
         LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_ro1.mp3" (lvar[0])
         SET_AUDIO_STREAM_STATE lvar[0] 1    //play
-        SET_AUDIO_STREAM_VOLUME lvar[0] 0.8
+        //SET_AUDIO_STREAM_VOLUME lvar[0] 0.8
+        GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+        fRandomVal[1] *= 0.8
+        SET_AUDIO_STREAM_VOLUME lvar[0] fRandomVal[1]
     ENDIF
 RETURN
 
@@ -1326,7 +1349,10 @@ play_rock_out_sfx_b:
     IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_ro2.mp3"
         LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_ro2.mp3" (lvar[1])
         SET_AUDIO_STREAM_STATE lvar[1] 1    //play
-        SET_AUDIO_STREAM_VOLUME lvar[1] 0.65
+        //SET_AUDIO_STREAM_VOLUME lvar[1] 0.65
+        GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+        fRandomVal[1] *= 0.65
+        SET_AUDIO_STREAM_VOLUME lvar[1] fRandomVal[1]
     ENDIF
 RETURN
 //------------------------------------------------------------
@@ -1614,7 +1640,10 @@ play_sfx_general_sfx:
             IF DOES_FILE_EXIST "CLEO\SpiderJ16D\sfx\powers_g_start.mp3"
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_g_start.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
-                SET_AUDIO_STREAM_VOLUME sfx 0.8
+                //SET_AUDIO_STREAM_VOLUME sfx 0.8
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                fRandomVal[1] *= 0.8
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
             BREAK
         CASE 1
@@ -1622,6 +1651,8 @@ play_sfx_general_sfx:
                 LOAD_AUDIO_STREAM "CLEO\SpiderJ16D\sfx\powers_g_fall.mp3" (sfx)
                 SET_AUDIO_STREAM_STATE sfx 1    //play
                 //SET_AUDIO_STREAM_VOLUME sfx 1.0
+                GET_AUDIO_SFX_VOLUME (fRandomVal[1])
+                SET_AUDIO_STREAM_VOLUME sfx fRandomVal[1]
             ENDIF
         BREAK
     ENDSWITCH

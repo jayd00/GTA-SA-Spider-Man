@@ -70,6 +70,8 @@ CONST_INT varSkill3c2           58    //sp_mb    ||1= Activated     || 0= Deacti
 
 CONST_INT player 0
 
+
+
 SCRIPT_START
 {
 SCRIPT_NAME sp_main
@@ -336,12 +338,13 @@ main_loop:
                             ELSE
                                 GET_CLEO_SHARED_VAR varFixGround (isFuncEnabled) //is Enabled Ground
                                 IF isFuncEnabled = 1
-                                    fVelZ += 5.0
-                                    CLEO_CALL addForceToChar 0 player_actor (0.0 fVelY fVelZ) fAmplitude
                                     // simulates is in air  -avoid stuck in ground
                                     LVAR_INT pStruct
                                     GET_PED_POINTER player_actor (pStruct)
                                     WRITE_STRUCT_OFFSET pStruct 0x46C BYTE 0    // ONFOOT_STATE = AIR
+
+                                    fVelZ += 2.0
+                                    CLEO_CALL addForceToChar 0 player_actor (0.0 fVelY fVelZ) fAmplitude
                                 ENDIF
                             ENDIF
 
