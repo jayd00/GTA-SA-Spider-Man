@@ -20,8 +20,8 @@ SCRIPT_START
 {
 SCRIPT_NAME sp_msc
 WAIT 0
-LVAR_INT flag_player_on_mission toggleMusic toggleSpiderMod isInMainMenu   //1:true 0: false
-LVAR_INT id_sfx sfx sfx_menu sfx_mission
+LVAR_INT flag_player_on_mission toggleMusic toggleSpiderMod isInMainMenu audio_line_is_active  //1:true 0: false
+LVAR_INT id_sfx sfx sfx_menu sfx_mission 
 LVAR_INT iCurrentTime iRandomVal
 LVAR_INT mp3_state mp3_state_menu
 LVAR_INT iHour iMin
@@ -83,20 +83,29 @@ WHILE TRUE
                                 CLEO_CALL decrease_volume 0 sfx fMaxVolume
                                 CLEO_CALL set_state_music_sfx 0 sfx 2  // -1|0:stop || 1:play || 2:pause || 3:resume
                                 WAIT 100
-
-                                GOSUB state_play_mission_sfx
-                                WHILE  flag_player_on_mission > 0
-                                    GOSUB readVars
-                                    IF toggleSpiderMod = 0
-                                        GOTO turn_off_sounds
-                                    ENDIF
-                                    //to do: pause mission sfx when in interior
-                                    //GET_AREA_VISIBLE (is_in_interior)
-                                    WAIT 0
-                                ENDWHILE
-                                CLEO_CALL decrease_volume 0 sfx_mission fMaxVolume
-                                CLEO_CALL set_state_music_sfx 0 sfx_mission 0  // -1|0:stop || 1:play || 2:pause || 3:resume
-
+                                IF flag_player_on_mission = 1   //now you can play MP3 in_mission with this flag
+                                    WHILE  flag_player_on_mission > 0
+                                        GOSUB readVars
+                                        IF toggleSpiderMod = 0
+                                            GOTO turn_off_sounds
+                                        ENDIF
+                                        WAIT 0
+                                    ENDWHILE
+                                ELSE
+                                    GOSUB state_play_mission_sfx
+                                    WHILE  flag_player_on_mission > 0
+                                        GOSUB readVars
+                                        IF toggleSpiderMod = 0
+                                            GOTO turn_off_sounds
+                                        ENDIF
+                                        CLEO_CALL sync_music_to_game_sfx 0 sfx_mission fMaxVolume
+                                        //to do: pause mission sfx when in interior
+                                        //GET_AREA_VISIBLE (is_in_interior)
+                                        WAIT 0
+                                    ENDWHILE
+                                    CLEO_CALL decrease_volume 0 sfx_mission fMaxVolume
+                                    CLEO_CALL set_state_music_sfx 0 sfx_mission 0  // -1|0:stop || 1:play || 2:pause || 3:resume
+                                ENDIF
                                 WAIT 100
                                 CLEO_CALL set_state_music_sfx 0 sfx 3    // -1|0:stop || 1:play || 2:pause || 3:resume
                                 CLEO_CALL increase_volume 0 sfx fMaxVolume
@@ -814,3 +823,5 @@ CONST_INT varSkill3b            55    //sp_me    ||1= Activated     || 0= Deacti
 CONST_INT varSkill3c            56    //sp_main  ||1= Activated     || 0= Deactivated
 CONST_INT varSkill3c1           57    //sp_mb    ||1= Activated     || 0= Deactivated
 CONST_INT varSkill3c2           58    //sp_mb    ||1= Activated     || 0= Deactivated
+
+CONST_INT varAudioActive     	45    // 0:OFF || 1:ON  ||global var to check -spech- audio playing

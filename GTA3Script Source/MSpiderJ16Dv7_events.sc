@@ -65,12 +65,16 @@ main_loop:
             GOSUB readVars
             IF toggleSpiderMod = 1  //TRUE
                 IF isInMainMenu = 0     //1:true 0: false
-                    GOSUB car_chase_event
+                    IF flag_player_on_mission = 0
+                        GOSUB car_chase_event
+                    ENDIF
                 ENDIF
             ELSE
-                IF iSfx[0] > 0        
-                    REMOVE_AUDIO_STREAM iSfx[0]
+                GET_AUDIO_STREAM_STATE iSfx[0] (iTempVar)
+                IF iTempVar = 1     //playing
+                    SET_AUDIO_STREAM_STATE iSfx[0] 0    //Stop
                 ENDIF
+                REMOVE_AUDIO_STREAM iSfx[0]
                 IF DOES_BLIP_EXIST iEventBlip
                     REMOVE_BLIP iEventBlip
                 ENDIF
@@ -156,6 +160,10 @@ car_chase_event:
                 ENDWHILE
 
                 reset_location:
+                GET_AUDIO_STREAM_STATE iSfx[0] (iTempVar)
+                IF iTempVar = 1     //playing
+                    SET_AUDIO_STREAM_STATE iSfx[0] 0    //Stop
+                ENDIF
                 REMOVE_AUDIO_STREAM iSfx[0]
                 IF DOES_BLIP_EXIST iEventBlip
                     REMOVE_BLIP iEventBlip
